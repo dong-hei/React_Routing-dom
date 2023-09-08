@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import React from 'react';
 import { styled } from 'styled-components';
 
@@ -20,6 +21,7 @@ const Home = (props) => {
 
   return (
     <div>
+      <Button variant="dark">Dark</Button>
       <StyledAddBtn user={user}>더하기</StyledAddBtn>
       <h1>이 곳은 홈페이지 입니다.</h1>
       <StyledDeleteBtn user={user} onClick={() => setBoards([])}>

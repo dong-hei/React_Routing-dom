@@ -8,7 +8,7 @@ const StyledBodyDiv = styled.div`
 const Body = () => {
   return (
     <StyledBodyDiv>
-      <h1>바디부 입니다.</h1>
+      <h1>바디부 입니다. (로그인 페이지) </h1>
     </StyledBodyDiv>
   );
 };

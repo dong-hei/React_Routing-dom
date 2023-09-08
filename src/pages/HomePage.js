@@ -1,5 +1,3 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Home from '../components/Home/Home';
 import { useEffect, useState } from 'react';
 
@@ -22,14 +20,8 @@ const HomePage = () => {
     setBoards([...data]); // 다운로드 받았다는 가정
     setUser({ id: 7, username: 'dk' });
   }, []);
-  return (
-    <div>
-      <Header />
-      <Home boards={boards} setBoards={setBoards} user={user} />
-      {/* 이렇게 Homepage에서 받은 데이터를 Home으로 넘길수있는데 이것을 props라고한다. */}
-      <Footer />
-    </div>
-  );
+  return <Home boards={boards} setBoards={setBoards} user={user} />;
+  // 이렇게 Homepage에서 받은 데이터를 Home으로 넘길수있는데 이것을 props라고한다.
 };
 
 export default HomePage;
